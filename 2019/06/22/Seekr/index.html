@@ -2,18 +2,22 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Archives: 2019/3 - aiRbAg&#39;s blogs</title>
+<title>Seekr - aiRbAg&#39;s blogs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="aiRbAg&#39;s blogs">
-<meta property="og:url" content="http://yoursite.com/archives/2019/03/index.html">
+    <meta name="description" content="I finished a full stack project, “Seekr”. It is an web app that allows users to search for software engineering related jobs, review open positions on the map, and manage their interview process on a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Seekr">
+<meta property="og:url" content="http://yoursite.com/2019/06/22/Seekr/index.html">
 <meta property="og:site_name" content="aiRbAg&#39;s blogs">
+<meta property="og:description" content="I finished a full stack project, “Seekr”. It is an web app that allows users to search for software engineering related jobs, review open positions on the map, and manage their interview process on a">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-06-23T00:21:48.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="aiRbAg&#39;s blogs">
+<meta name="twitter:title" content="Seekr">
+<meta name="twitter:description" content="I finished a full stack project, “Seekr”. It is an web app that allows users to search for software engineering related jobs, review open positions on the map, and manage their interview process on a">
 
 
 
@@ -119,83 +123,126 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="tag is-link">
-        March 2019
-        </h3>
-        <div class="timeline">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/gallery/thumbnails/board.png" alt="Seekr">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
         
-            <article class="media">
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-23T00:04:40.000Z">2019-06-22</time>
                 
-                <a href="/2019/03/20/Pygame-project/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/thumbnails/demo.gif" alt="Pygame project">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-03-21T05:08:28.000Z">2019-03-20</time>
-                        <a href="/2019/03/20/Pygame-project/" class="has-link-black-ter is-size-6">Pygame project</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/python/">python</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/web-development/">web development</a>
                 </div>
-            </article>
-        
-            <article class="media">
                 
-                <a href="/2019/03/18/About-me/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/thumbnails/snoopy_museum.jpg" alt="About me">
-                    </p>
-                </a>
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-03-18T20:05:54.000Z">2019-03-18</time>
-                        <a href="/2019/03/18/About-me/" class="has-link-black-ter is-size-6">About me</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
                 
-                <a href="/2019/03/18/My-first-post/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/thumbnails/noodle_cat.jpg" alt="My first post">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-03-18T07:12:09.000Z">2019-03-18</time>
-                        <a href="/2019/03/18/My-first-post/" class="has-link-black-ter is-size-6">My first post</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
+            </div>
         </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Seekr
+            
+        </h1>
+        <div class="content">
+            <p>I finished a full stack project, “Seekr”. It is an web app that allows users to search for software engineering related jobs, review open positions on the map, and manage their interview process on a JIRA-like tracking board.</p>
+<p>This project has a decoupled backend and frontend. I have a Postgres database and I’m using Flask to serve a RESTful API. All that data is being consumed and displayed with React. <a id="more"></a>Before starting the project I knew that I could use Flask to serve JSON. However, my backend and frontend exchange data frequently, so I did some research and decided to use Flask RESTful API in addition to Flask. This helped me quickly setting up all the endpoints for CRUD actions.</p>
+<p>The job information comes from indeed.com and the Google Places API. Since indeed doesn’t provide public API, I scraped the data from their website with Beatiful Soup and Selenium. The Google Places API is being used to collect companies’ geolocation info and the rating scores. All these get stored in Postgres.</p>
+<p>My frontend is built with React. It uses fetch function to make AJAX requests to my backend API. One thing I want to mention is, I first built my MVP using jQuery and Jinja, and I then refactored all of those using React and JSX. I did this because I want to practice building frontend in different ways.</p>
+<p>Once a login user saved a job and marked it as an applied one, it appears on a JIRA-like tracking board which is my favorite feature. As a former project manager, I used Jira a lot. I like its interactivity, which motivated me to implement this feature. To do this, I used a library called React-DnD, to make my card component draggable and my column component droppable. I used callback function to listen to the dropping event, so anytime a card has been moved, it immediately updates the status and creates a system log in database. There are also modals for user to write notes, or to manually create job card to track.</p>
+<p>From this project, I have gained experience of modeling a relational database, creating a backend API and building a frontend using React.</p>
+<p>Now the web is live at <a href="http://seekr.link" target="_blank" rel="noopener">http://seekr.link</a>. Notice that I’m not going to scrape more data from indeed, which means the searching results will be out of date. However, I encourage you to sign up and check out the tracking feature. You can defenitly use it to manage your actual interview process by using the “add job” feature.:)</p>
+<p>GitHub pages:</p>
+<ul>
+<li>Seekr: <a href="https://github.com/airbaggie/seekr_web_app" target="_blank" rel="noopener">https://github.com/airbaggie/seekr_web_app</a></li>
+<li>Web scraper: <a href="https://github.com/airbaggie/web_scraper" target="_blank" rel="noopener">https://github.com/airbaggie/web_scraper</a></li>
+</ul>
+
+        </div>
+        
+        
+        
+        <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_wechat"></a>
+<a class="a2a_button_email"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/images/alipay.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/images/wechat_pay.jpg" alt="Wechat"></div>
+</a>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<a class="button is-warning donate" onclick="document.getElementById(&#39;paypal-donate-form&#39;).submit()">
+    <span class="icon is-small">
+        <i class="fab fa-paypal"></i>
+    </span>
+    <span>Paypal</span>
+</a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal-donate-form">
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="hidden" name="business" value="airportico@gmail.com">
+    <input type="hidden" name="currency_code" value="USD">
+</form>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/03/20/Pygame-project/">
+                <span class="level-item">Pygame project</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
     </div>
 </div>
 
